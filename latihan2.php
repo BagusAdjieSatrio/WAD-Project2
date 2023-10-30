@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Form Input</title>
+    <title>latihan2_php</title>
 </head>
 <body>
-    <form>
-        <label for="inputAngka">Input Angka:</label>
-        <input type="number" id="inputAngka" name="inputAngka" placeholder="Masukkan angka" required>
+    <h1>Kalkulator</h1>
+    
+    <form method="post" action="latihan3.php">
+        <label for="InputAngka1">Masukkan Angka : </label>
+        <input type="number" id="InputAngka1" name="InputAngka" required><br><br>
+	<form method="post" action="latihan3.php">
+        <label for="InputAngka2">Masukkan Angka : </label>
+        <input type="number" id="InputAngka2" name="InputAngka" required><br><br>
+        <label for="Dropdown">Pengoperasian: </label>
+        <select id="Dropdown" name="Dropdown">
+            <option value="pilihan1">Opsi 1</option>
+            <option value="pilihan2">Opsi 2</option>
+            <option value="pilihan3">Opsi 3</option>
+        </select><br><br>
 
-        <label for="inputDropdown">Pilih opsi:</label>
-        <select id="inputDropdown" name="inputDropdown">
-            <option value="option1">Opsi 1</option>
-            <option value="option2">Opsi 2</option>
-            <option value="option3">Opsi 3</option>
-        </select>
-    <button type="button" id="hitung">Hitung</button>
+        <button type="submit" name="hitung">Hitung</button>
     </form>
-</body>
 </html>
